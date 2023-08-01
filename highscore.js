@@ -14,6 +14,7 @@ let currentQuestion = 0;
 
 let timer = 90;
 
+let pastHighScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 let timerId = setInterval(function(){
 
@@ -22,6 +23,6 @@ let timerId = setInterval(function(){
 
 }, 1000);
 
-//code to retrierve highscores form local storage
-let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-// create a button to clear the local storage
+timerEl.textContent = "Timer: " + timer;
+
+
