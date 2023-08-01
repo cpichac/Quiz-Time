@@ -12,6 +12,8 @@ let timerEl = document.querySelector("#timer")
 // main format for sellecting answers and moving on to the next 
 let currentQuestion = 0;
 
+let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
 let timer = 90;
 
 
@@ -21,7 +23,3 @@ let timerId = setInterval(function(){
     console.log(timer)
 
 }, 1000);
-
-//code to retrierve highscores form local storage
-let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-// create a button to clear the local storage
