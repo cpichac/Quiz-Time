@@ -60,18 +60,27 @@ function renderQuestion() {
     questionButton4.textContent = questions[currentQuestion].answers[3]
     questions[currentQuestion].correctAnswer
     
-        quizDiv.addEventListener("click", function(event) {
+        quizDiv.addEventListener("click", function(event){
 
-            
+            if(event.target.matches("button")){
 
-            if( event.target.matches("button")){
                 
-                
-                
-                
+                if(event.target.innerText == questions[currentQuestion].correctAnswer){
+                    
+                    correctAnswer.textContent =  questions[currentQuestion].correctAnswer + " was correct!"
 
-            }  
+
+                }
+                else{
+                    correctAnswer.textContent =  event.target.innerText + " was incorrect!"
+                    timer =- 5;
+                }
             currentQuestion++;
-            renderQuestion()
-        })}
-          
+            renderQuestion()   
+            }  
+            
+    })
+
+       
+}
+ 
