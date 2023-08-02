@@ -36,7 +36,10 @@ h1{
 
 p{
     /* padding: 10px; */
-    margin-bottom: 50px;
+    margin-top: 10px;
+}
+#highscore-list{
+    margin-top: 10px;
 }
 
 .button-container{
@@ -59,4 +62,10 @@ p{
     border: 5px dashed rgb(105, 161, 199);
     background-color: white;
     border-radius: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
 }

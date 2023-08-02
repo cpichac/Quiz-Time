@@ -8,7 +8,7 @@ let questionButton3 = document.querySelector("#answer3");
 let questionButton4 = document.querySelector("#answer4");
 let correctAnswer = document.querySelector("#correct-answer");
 let timerEl = document.querySelector("#timer");
-let startButton = document.querySelector("start-btn");
+let startButton = document.querySelector(".btn");
 
 // main format for sellecting answers and moving on to the next 
 let currentQuestion = 0;
@@ -19,5 +19,7 @@ let timer = 90;
 
 timerEl.textContent = "Timer: " + timer;
 
-
-
+function gotoLink(link){
+    
+    location.href = 'https://cpichac.github.io/Quiz-Time/';
+}
