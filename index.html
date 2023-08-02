@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
     
     <head>
+
+        <div class="head-container">
         <!-- add link to the Highscore page -->
-        <h3>
-        <a class="highscore" href="">View Highscore Here</a>
-        </h3>
-        <h3 id="timer"></h3>
+            <h3>
+            <a class="highscore" href="">View Highscore Here</a>
+            </h3>
+            <h3 id="timer"></h3>
+
+        </div>
 
     </head>
 
-    <div id="quiz">
+    <div id="quiz" class="quiz-container button-container">
         <h1 id="question"></h1>
 
-        <button id="answer1"></button>
-        <button id="answer2"></button>
-        <button id="answer3"></button>
-        <button id="answer4"></button>
+        <button class="btn" id="answer1"></button>
+        <button class="btn" id="answer2"></button>
+        <button class="btn" id="answer3"></button>
+        <button class="btn" id="answer4"></button>
 
     </div>
 
-    <div>
+    <div class="result">
         <p id="correct-answer"></p>
     </div>
 
